@@ -1,13 +1,85 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300&display=swap');
+
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Poppins";
+  background-color: rgb(12, 236, 206);
+} 
+
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo{
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  max-width: 350px;
+  border-radius: 7%;
+  min-height: 400px;
+  padding: 20px;
+  background-color: #fff;
+  color: rgb(40, 136, 123);
+}
+.todo-item{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ml-1{
+  margin-left: 10px;
+}
+
+form{
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+form input{
+  width: 85%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+::placeholder{
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #888;
+
+}
+
+form button{
+  background-color: transparent;
+  border: 1px solid #999;
+  width: 13%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+button:hover{
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.button {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  width: 70px; /* Adjust the width to your desired size */
+  height: 30px; /* Adjust the height to your desired size */
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 5%; /* To make it circular */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  color: #000; /* Text color */
+  margin-left: 10px; /* Adjust margin as needed */
 }
